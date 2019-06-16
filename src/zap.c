@@ -2138,7 +2138,7 @@ register struct obj *wand;
         return 0;
     if (wand->spe == 0)
         You("wrest one last charge from the worn-out wand.");
-    wand->spe--;
+    //wand->spe--;
     return 1;
 }
 
