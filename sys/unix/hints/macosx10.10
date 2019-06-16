@@ -21,7 +21,7 @@
 WANT_WIN_TTY=1
 #WANT_WIN_X11=1
 #WANT_WIN_QT=1
-#WANT_WIN_CURSES=1
+WANT_WIN_CURSES=1
 
 # 1a. What is the default window system?
 WANT_DEFAULT=tty
