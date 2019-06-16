@@ -393,7 +393,7 @@ learn(VOID_ARGS)
             Your("knowledge of %s is %s.", splname,
                  spellknow(i) ? "keener" : "restored");
             incrnknow(i, 1);
-            book->spestudied++;
+            //book->spestudied++;
             exercise(A_WIS, TRUE); /* extra study */
         }
         /* make book become known even when spell is already
@@ -413,7 +413,7 @@ learn(VOID_ARGS)
             spl_book[i].sp_id = booktype;
             spl_book[i].sp_lev = objects[booktype].oc_level;
             incrnknow(i, 1);
-            book->spestudied++;
+            //book->spestudied++;
             You(i > 0 ? "add %s to your repertoire." : "learn %s.", splname);
         }
         makeknown((int) booktype);
