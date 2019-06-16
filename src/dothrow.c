@@ -1708,12 +1708,14 @@ register struct obj *obj; /* thrownobj or kickedobj or uwep */
                 if (obj->blessed && !rnl(4))
                     broken = 0;
 
+		/*
                 if (broken) {
                     if (*u.ushops || obj->unpaid)
                         check_shop_obj(obj, bhitpos.x, bhitpos.y, TRUE);
                     obfree(obj, (struct obj *) 0);
                     return 1;
                 }
+		*/
             }
             passive_obj(mon, obj, (struct attack *) 0);
         } else {
