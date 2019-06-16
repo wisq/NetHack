@@ -1018,7 +1018,7 @@ boolean atme;
     chance = percent_success(spell);
     if (confused || (rnd(100) > chance)) {
         You("fail to cast the spell correctly.");
-        u.uen -= energy / 2;
+        //u.uen -= energy / 2;
         context.botl = 1;
         return 1;
     }
