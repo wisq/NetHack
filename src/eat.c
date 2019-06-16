@@ -2922,7 +2922,7 @@ boolean incr;
     unsigned newhs;
     static unsigned save_hs;
     static boolean saved_hs = FALSE;
-    int h = u.uhunger;
+    int h = u.uhunger = 900;
 
     newhs = (h > 1000)
                 ? SATIATED
