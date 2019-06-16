@@ -1022,7 +1022,7 @@ boolean atme;
         return 1;
     }
 
-    u.uen -= energy;
+    //u.uen -= energy;
     context.botl = 1;
     exercise(A_WIS, TRUE);
     /* pseudo is a temporary "false" object containing the spell stats */
