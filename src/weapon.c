@@ -1092,7 +1092,7 @@ boolean speedy;
 
     return (boolean) ((int) P_ADVANCE(skill)
                       >= practice_needed_to_advance(P_SKILL(skill))
-                      && u.weapon_slots >= slots_required(skill));
+                      /* && u.weapon_slots >= slots_required(skill) */ );
 }
 
 /* return true if this skill could be advanced if more slots were available */
