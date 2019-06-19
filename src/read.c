@@ -591,15 +591,7 @@ int curse_bless;
         case EXPENSIVE_CAMERA:
             if (is_cursed)
                 stripspe(obj);
-            else if (rechrg
-                     && obj->otyp
-                            == MAGIC_MARKER) { /* previously recharged */
-                obj->recharged = 1; /* override increment done above */
-                if (obj->spe < 3)
-                    Your("marker seems permanently dried out.");
-                else
-                    pline1(nothing_happens);
-            } else if (is_blessed) {
+            else if (is_blessed) {
                 n = rn1(16, 15); /* 15..30 */
                 if (obj->spe + n <= 50)
                     obj->spe = 50;
