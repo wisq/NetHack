@@ -2138,7 +2138,11 @@ register struct obj *wand;
         return 0;
     if (wand->spe == 0)
         You("wrest one last charge from the worn-out wand.");
-    //wand->spe--;
+
+    /* Cheat: Wands are unlimited, except wishing. */
+    if (wand->otyp == WAN_WISHING)
+	wand->spe--;
+
     return 1;
 }
 
