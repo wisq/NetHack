@@ -1695,6 +1695,10 @@ dosacrifice()
                     if ((int) u.uluck < 0)
                         u.uluck = 0;
                 }
+            } else if (!rn2(20)) {
+                pline("%s seems %s.", u_gname(),
+                        Hallucination ? "chill" : "in a forgiving mood for once");
+                u.ugangr--;
             } else { /* not satisfied yet */
                 if (Hallucination)
                     pline_The("gods seem tall.");
