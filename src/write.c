@@ -246,7 +246,7 @@ found:
     exercise(A_WIS, TRUE);
     /* dry out marker */
     if (pen->spe < actualcost) {
-        //pen->spe = 0;
+        pen->spe = 0;
         Your("marker dries out!");
         /* scrolls disappear, spellbooks don't */
         if (paper->oclass == SPBOOK_CLASS) {
@@ -259,7 +259,7 @@ found:
         obfree(new_obj, (struct obj *) 0);
         return 1;
     }
-    //pen->spe -= actualcost;
+    pen->spe -= actualcost;
 
     /*
      * Writing by name requires that the hero knows the scroll or
